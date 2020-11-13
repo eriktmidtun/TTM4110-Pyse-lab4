@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    643017,      12643]
-NotebookOptionsPosition[    629525,      12438]
-NotebookOutlinePosition[    630035,      12458]
-CellTagsIndexPosition[    629992,      12455]
+NotebookDataLength[    649880,      12778]
+NotebookOptionsPosition[    635802,      12567]
+NotebookOutlinePosition[    636312,      12587]
+CellTagsIndexPosition[    636269,      12584]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -12303,32 +12303,47 @@ a25da747186d"],
 Cell[TextData[{
  "The system is \[OpenCurlyDoubleQuote]up/working\[CloseCurlyDoubleQuote] \
 when \n\t- both runways, AND\n\t- at least 6 of 10 gates, AND\n\t- one of two \
-deicing stations \nare available.\n\n5.1. What do you have to assume to use a \
-Reliability Block Diagram (RBD)?  What does this mean in the context of the \
-airport system? Is this realistic? \n5.2. Make an Reliability Block Diagram \
-(RBD) of the total airport system\n5.3. Make reliability functions for \n\t- \
-R(t,\[Lambda]) (single component), \n\t- ",
+deicing stations \nare available.\n\n",
+ StyleBox["5.1. What do you have to assume to use a Reliability Block Diagram \
+(RBD)?  What does this mean in the context of the airport system? Is this \
+realistic? ",
+  FontWeight->"Bold"],
+ "\nNo rates depend on the system state  \[Dash]Independent failing \
+\[Dash]Independent repairs / restoration\n\n",
+ StyleBox["5.2. Make an Reliability Block Diagram (RBD) of the total airport \
+system\n",
+  FontWeight->"Bold"],
+ "\n",
+ StyleBox["5.3. Make reliability functions for ",
+  FontWeight->"Bold"],
+ "\n\t",
+ StyleBox["- R(t,\[Lambda]) (single component), \n\t- ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   SubscriptBox["R", "s"]],
   CellChangeTimes->{{3.8134866477151546`*^9, 3.8134866655744333`*^9}, {
     3.813488609421904*^9, 3.813488652128763*^9}, 3.813488814350778*^9, {
-    3.813555696349983*^9, 3.8135557148965883`*^9}},ExpressionUUID->
-  "e4f1f8bb-3d20-4b9f-8444-551afb130ea0"],
- "(t,n,\[Lambda]), for an n-serial structure \n\t- ",
+    3.813555696349983*^9, 3.8135557148965883`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"e4f1f8bb-3d20-4b9f-8444-551afb130ea0"],
+ StyleBox["(t,n,\[Lambda]), for an n-serial structure \n\t- ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   SubscriptBox["R", "p"]],
   CellChangeTimes->{{3.8134866477151546`*^9, 3.8134866655744333`*^9}, {
     3.813488609421904*^9, 3.813488652128763*^9}, 3.813488814350778*^9, {
-    3.813555696349983*^9, 3.8135557148965883`*^9}},ExpressionUUID->
-  "6180b747-d558-44dd-b934-5b3eedc2d747"],
- "(t,n,\[Lambda]), for an n-parallel structure \n\t- ",
+    3.813555696349983*^9, 3.8135557148965883`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"6180b747-d558-44dd-b934-5b3eedc2d747"],
+ StyleBox["(t,n,\[Lambda]), for an n-parallel structure \n\t- ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   SubscriptBox["R", "kofn"]],
   CellChangeTimes->{{3.8134866477151546`*^9, 3.8134866655744333`*^9}, {
     3.813488609421904*^9, 3.813488652128763*^9}, 3.813488814350778*^9, {
-    3.813555696349983*^9, 3.8135557148965883`*^9}},ExpressionUUID->
-  "7f0df2c2-63a1-4bc2-9d5f-2985bed93eea"],
- "(t,k,n,\[Lambda]), for a k-of-n structure\n\tCheck function  by \n\t",
+    3.813555696349983*^9, 3.8135557148965883`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"7f0df2c2-63a1-4bc2-9d5f-2985bed93eea"],
+ StyleBox["(t,k,n,\[Lambda]), for a k-of-n structure\n\tCheck function  by \n\
+\t",
+  FontWeight->"Bold"],
  Cell[BoxData[
   RowBox[{"Integrate", "[", 
    RowBox[{
@@ -12339,80 +12354,61 @@ R(t,\[Lambda]) (single component), \n\t- ",
     RowBox[{"{", 
      RowBox[{"t", ",", "0", ",", "\[Infinity]"}], "}"}], ",", " ", 
     RowBox[{"Assumptions", "\[Rule]", 
-     RowBox[{"\[Lambda]", ">", "0"}]}]}], "]"}]],ExpressionUUID->
-  "82774b5b-2070-42a5-a943-2397baad8606"],
- "= ",
+     RowBox[{"\[Lambda]", ">", "0"}]}]}], "]"}]],
+  FontWeight->"Bold",ExpressionUUID->"82774b5b-2070-42a5-a943-2397baad8606"],
+ StyleBox["= ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   FractionBox["121", 
    RowBox[{"360", " ", "\[Lambda]"}]]],
   CellChangeTimes->{{3.8136331228945417`*^9, 3.81363315216595*^9}},
-  ExpressionUUID->"26186f9a-74c6-4c20-ac2f-fa87f32086ba"],
- ". Which property have you now calculated?\n\tExplain how ",
+  FontWeight->"Bold",ExpressionUUID->"26186f9a-74c6-4c20-ac2f-fa87f32086ba"],
+ StyleBox[". Which property have you now calculated?",
+  FontWeight->"Bold"],
+ "\n\t",
+ StyleBox["Explain how ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   SubscriptBox["R", "s"]],
   CellChangeTimes->{{3.8134866477151546`*^9, 3.8134866655744333`*^9}, {
     3.813488609421904*^9, 3.813488652128763*^9}, 3.813488814350778*^9, {
-    3.813555696349983*^9, 3.8135557148965883`*^9}},ExpressionUUID->
-  "d10b4fa5-9a3c-470f-9c74-e69b1d66fbe3"],
- "(t,n,\[Lambda]) and ",
+    3.813555696349983*^9, 3.8135557148965883`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"d10b4fa5-9a3c-470f-9c74-e69b1d66fbe3"],
+ StyleBox["(t,n,\[Lambda]) and ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   SubscriptBox["R", "p"]],
   CellChangeTimes->{{3.8134866477151546`*^9, 3.8134866655744333`*^9}, {
     3.813488609421904*^9, 3.813488652128763*^9}, 3.813488814350778*^9, {
-    3.813555696349983*^9, 3.8135557148965883`*^9}},ExpressionUUID->
-  "1b5de1f2-5829-44c1-be4d-01c1efa9f352"],
- "(t,n,\[Lambda]) can be replaced by ",
+    3.813555696349983*^9, 3.8135557148965883`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"1b5de1f2-5829-44c1-be4d-01c1efa9f352"],
+ StyleBox["(t,n,\[Lambda]) can be replaced by ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   SubscriptBox["R", "kofn"]],
   CellChangeTimes->{{3.8134866477151546`*^9, 3.8134866655744333`*^9}, {
     3.813488609421904*^9, 3.813488652128763*^9}, 3.813488814350778*^9, {
-    3.813555696349983*^9, 3.8135557148965883`*^9}},ExpressionUUID->
-  "ee62bfcf-c9a8-4e6a-aa31-28f67f680dff"],
- "(t,k,n,\[Lambda]).\n\tPlot ",
+    3.813555696349983*^9, 3.8135557148965883`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"ee62bfcf-c9a8-4e6a-aa31-28f67f680dff"],
+ StyleBox["(t,k,n,\[Lambda]).\n\tPlot ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   SubscriptBox["R", "kofn"]],
   CellChangeTimes->{{3.8134866477151546`*^9, 3.8134866655744333`*^9}, {
     3.813488609421904*^9, 3.813488652128763*^9}, 3.813488814350778*^9, {
-    3.813555696349983*^9, 3.8135557148965883`*^9}},ExpressionUUID->
-  "92a78dea-ffbf-485b-a8a8-7f834303e046"],
- "(t,6,10,\[Lambda]) and ",
+    3.813555696349983*^9, 3.8135557148965883`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"92a78dea-ffbf-485b-a8a8-7f834303e046"],
+ StyleBox["(t,6,10,\[Lambda]) and ",
+  FontWeight->"Bold"],
  Cell[BoxData[
   SubscriptBox["R", "kofn"]],
   CellChangeTimes->{{3.8134866477151546`*^9, 3.8134866655744333`*^9}, {
     3.813488609421904*^9, 3.813488652128763*^9}, 3.813488814350778*^9, {
-    3.813555696349983*^9, 3.8135557148965883`*^9}},ExpressionUUID->
-  "9e3a07ff-cb91-4db5-bc82-f959c30b9b9b"],
- "(t,8,10,\[Lambda]) for 20 valued of \[Lambda] in [1,20] (hint: use Table \
-and ListPlot)\n5.4. Use your reliability functions to determine the ",
- Cell[BoxData[
-  FormBox[
-   SubscriptBox["R", "tot"], TraditionalForm]],ExpressionUUID->
-  "939ea496-e05e-4a79-a741-89f040ba8ddd"],
- "(t) for the airport, compliant with your RBD.\n5.5. Plot ",
- Cell[BoxData[
-  FormBox[
-   RowBox[{
-    SubscriptBox["R", "tot"], "(", "t", ")"}], TraditionalForm]],
-  ExpressionUUID->"5f57e5d4-4766-4d18-b1c1-6c5ff052e73c"],
- " for  ",
- Cell[BoxData[
-  RowBox[{
-   SubscriptBox["\[ScriptCapitalP]", "\[Lambda]"], "=", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{
-      SubscriptBox["\[Lambda]", "1"], "\[Rule]", " ", "0.02"}], ",", 
-     RowBox[{
-      SubscriptBox["\[Lambda]", "2"], "\[Rule]", " ", "0.06"}], ",", 
-     RowBox[{
-      SubscriptBox["\[Lambda]", "3"], "\[Rule]", " ", "0.1"}]}], "}"}]}]],
-  CellChangeTimes->{{3.813488396000749*^9, 3.81348846442076*^9}, {
-   3.8134885201585207`*^9, 3.8134885717579327`*^9}},ExpressionUUID->
-  "faca81cb-731f-44b1-ac6e-eca8bac77508"],
- "[1/days]\n\tWhat is the probability that the airport runs without \
-interruptions for 1 day, 1 week, and 1 month (including night shifts)?\n5.6. \
-What is the main cause of failure?  Which change(s) will have the highest \
-effect?"
+    3.813555696349983*^9, 3.8135557148965883`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"9e3a07ff-cb91-4db5-bc82-f959c30b9b9b"],
+ StyleBox["(t,8,10,\[Lambda]) for 20 valued of \[Lambda] in [1,20] (hint: use \
+Table and ListPlot)",
+  FontWeight->"Bold"]
 }], "Text",
  CellChangeTimes->{{3.813485251660809*^9, 3.8134852586255293`*^9}, {
    3.813486112940634*^9, 3.81348620488596*^9}, {3.813488588105166*^9, 
@@ -12430,9 +12426,142 @@ effect?"
    3.813636392065804*^9, 3.813636444766884*^9}, {3.813638978133078*^9, 
    3.8136389808132687`*^9}, {3.81366246854291*^9, 3.813662751418146*^9}, 
    3.813663654102912*^9, {3.813663692933125*^9, 3.813663699604348*^9}, {
-   3.814068430293157*^9, 
-   3.8140684377781544`*^9}},ExpressionUUID->"5ebf3536-227a-481a-a899-\
-3f0be03e0a26"]
+   3.814068430293157*^9, 3.8140684377781544`*^9}, {3.8142676445821486`*^9, 
+   3.8142676849331493`*^9}},ExpressionUUID->"5ebf3536-227a-481a-a899-\
+3f0be03e0a26"],
+
+Cell[BoxData["code"], "Input",
+ CellChangeTimes->{{3.8142676827001486`*^9, 
+  3.8142676830201483`*^9}},ExpressionUUID->"6a54763a-70b0-4955-ab7b-\
+c4d2b99b6065"],
+
+Cell[TextData[{
+ StyleBox["5.4. Use your reliability functions to determine the ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["R", "tot"], TraditionalForm]],
+  FontWeight->"Bold",ExpressionUUID->"03696cdb-6cfe-432e-9483-1e6e4c835a2a"],
+ StyleBox["(t) for the airport, compliant with your RBD.",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.813485251660809*^9, 3.8134852586255293`*^9}, {
+   3.813486112940634*^9, 3.81348620488596*^9}, {3.813488588105166*^9, 
+   3.81348859087113*^9}, {3.813488678958653*^9, 3.8134887263407707`*^9}, {
+   3.813488758506727*^9, 3.813488836174925*^9}, {3.813489069715808*^9, 
+   3.813489145215464*^9}, {3.813489250270166*^9, 3.813489376443983*^9}, {
+   3.813491014506453*^9, 3.813491019896905*^9}, {3.813553830835446*^9, 
+   3.813553874845154*^9}, {3.813553992948201*^9, 3.8135539965996513`*^9}, {
+   3.81355564430383*^9, 3.813555687074736*^9}, {3.813556083484146*^9, 
+   3.813556231353613*^9}, {3.813585169746047*^9, 3.813585178446311*^9}, {
+   3.813590192172297*^9, 3.813590197904192*^9}, {3.813632952289871*^9, 
+   3.813633114693433*^9}, {3.81363316945443*^9, 3.813633260690387*^9}, {
+   3.8136332944443274`*^9, 3.813633386712985*^9}, {3.8136339517355824`*^9, 
+   3.813634010415965*^9}, {3.813634060982876*^9, 3.813634067193718*^9}, {
+   3.813636392065804*^9, 3.813636444766884*^9}, {3.813638978133078*^9, 
+   3.8136389808132687`*^9}, {3.81366246854291*^9, 3.813662751418146*^9}, 
+   3.813663654102912*^9, {3.813663692933125*^9, 3.813663699604348*^9}, {
+   3.814068430293157*^9, 3.8140684377781544`*^9}, {3.8142676445821486`*^9, 
+   3.814267727182149*^9}},ExpressionUUID->"0fec2d22-d3d6-481f-8170-\
+8a921c0e7587"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   SubscriptBox["R", "tot"], "[", "t_", "]"}], ":=", 
+  "t"}], "\[IndentingNewLine]", "code"}], "Input",
+ CellChangeTimes->{{3.8142677368681483`*^9, 3.8142677371881485`*^9}, {
+  3.8142678009241524`*^9, 
+  3.8142678204361486`*^9}},ExpressionUUID->"e8e7c322-4ccb-4e06-9c5b-\
+25d50118bf8e"],
+
+Cell[TextData[{
+ StyleBox["5.5. Plot ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["R", "tot"], "(", "t", ")"}], TraditionalForm]],
+  FontWeight->"Bold",ExpressionUUID->"d42c8304-65bb-4a5e-bca9-9b1584005e00"],
+ StyleBox[" for  ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  RowBox[{
+   SubscriptBox["\[ScriptCapitalP]", "\[Lambda]"], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["\[Lambda]", "1"], "\[Rule]", " ", "0.02"}], ",", 
+     RowBox[{
+      SubscriptBox["\[Lambda]", "2"], "\[Rule]", " ", "0.06"}], ",", 
+     RowBox[{
+      SubscriptBox["\[Lambda]", "3"], "\[Rule]", " ", "0.1"}]}], "}"}]}]],
+  CellChangeTimes->{{3.813488396000749*^9, 3.81348846442076*^9}, {
+   3.8134885201585207`*^9, 3.8134885717579327`*^9}},
+  FontWeight->"Bold",ExpressionUUID->"3259dfb1-82a4-466f-80a8-d31cdd6ea508"],
+ StyleBox["[1/days]\n\tWhat is the probability that the airport runs without \
+interruptions for 1 day, 1 week, and 1 month (including night shifts)?",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.813485251660809*^9, 3.8134852586255293`*^9}, {
+   3.813486112940634*^9, 3.81348620488596*^9}, {3.813488588105166*^9, 
+   3.81348859087113*^9}, {3.813488678958653*^9, 3.8134887263407707`*^9}, {
+   3.813488758506727*^9, 3.813488836174925*^9}, {3.813489069715808*^9, 
+   3.813489145215464*^9}, {3.813489250270166*^9, 3.813489376443983*^9}, {
+   3.813491014506453*^9, 3.813491019896905*^9}, {3.813553830835446*^9, 
+   3.813553874845154*^9}, {3.813553992948201*^9, 3.8135539965996513`*^9}, {
+   3.81355564430383*^9, 3.813555687074736*^9}, {3.813556083484146*^9, 
+   3.813556231353613*^9}, {3.813585169746047*^9, 3.813585178446311*^9}, {
+   3.813590192172297*^9, 3.813590197904192*^9}, {3.813632952289871*^9, 
+   3.813633114693433*^9}, {3.81363316945443*^9, 3.813633260690387*^9}, {
+   3.8136332944443274`*^9, 3.813633386712985*^9}, {3.8136339517355824`*^9, 
+   3.813634010415965*^9}, {3.813634060982876*^9, 3.813634067193718*^9}, {
+   3.813636392065804*^9, 3.813636444766884*^9}, {3.813638978133078*^9, 
+   3.8136389808132687`*^9}, {3.81366246854291*^9, 3.813662751418146*^9}, 
+   3.813663654102912*^9, {3.813663692933125*^9, 3.813663699604348*^9}, {
+   3.814068430293157*^9, 3.8140684377781544`*^9}, {3.8142676445821486`*^9, 
+   3.8142677525241485`*^9}},ExpressionUUID->"4b7f69c9-59f9-4fdd-aed4-\
+b990655e211f"],
+
+Cell[BoxData[{
+ RowBox[{
+  SubscriptBox["\[ScriptCapitalP]", "\[Lambda]"], "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Lambda]", "1"], "\[Rule]", " ", "0.02"}], ",", 
+    RowBox[{
+     SubscriptBox["\[Lambda]", "2"], "\[Rule]", " ", "0.06"}], ",", 
+    RowBox[{
+     SubscriptBox["\[Lambda]", "3"], "\[Rule]", " ", "0.1"}]}], 
+   "}"}]}], "\[IndentingNewLine]", "code"}], "Input",
+ CellChangeTimes->{{3.814267748996148*^9, 3.8142677501881485`*^9}, {
+  3.8142677805161495`*^9, 
+  3.814267781670149*^9}},ExpressionUUID->"9ea35569-e6e1-4c6c-ae22-\
+01e34bd7ebe9"],
+
+Cell[TextData[StyleBox["5.6. What is the main cause of failure?  Which \
+change(s) will have the highest effect?",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.813485251660809*^9, 3.8134852586255293`*^9}, {
+   3.813486112940634*^9, 3.81348620488596*^9}, {3.813488588105166*^9, 
+   3.81348859087113*^9}, {3.813488678958653*^9, 3.8134887263407707`*^9}, {
+   3.813488758506727*^9, 3.813488836174925*^9}, {3.813489069715808*^9, 
+   3.813489145215464*^9}, {3.813489250270166*^9, 3.813489376443983*^9}, {
+   3.813491014506453*^9, 3.813491019896905*^9}, {3.813553830835446*^9, 
+   3.813553874845154*^9}, {3.813553992948201*^9, 3.8135539965996513`*^9}, {
+   3.81355564430383*^9, 3.813555687074736*^9}, {3.813556083484146*^9, 
+   3.813556231353613*^9}, {3.813585169746047*^9, 3.813585178446311*^9}, {
+   3.813590192172297*^9, 3.813590197904192*^9}, {3.813632952289871*^9, 
+   3.813633114693433*^9}, {3.81363316945443*^9, 3.813633260690387*^9}, {
+   3.8136332944443274`*^9, 3.813633386712985*^9}, {3.8136339517355824`*^9, 
+   3.813634010415965*^9}, {3.813634060982876*^9, 3.813634067193718*^9}, {
+   3.813636392065804*^9, 3.813636444766884*^9}, {3.813638978133078*^9, 
+   3.8136389808132687`*^9}, {3.81366246854291*^9, 3.813662751418146*^9}, 
+   3.813663654102912*^9, {3.813663692933125*^9, 3.813663699604348*^9}, {
+   3.814068430293157*^9, 3.8140684377781544`*^9}, {3.8142676445821486`*^9, 
+   3.8142677543161483`*^9}},ExpressionUUID->"07452ea1-d507-4687-8e70-\
+2e353bbf31c4"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -12642,7 +12771,13 @@ Cell[621654, 12275, 812, 12, 52, "Text",ExpressionUUID->"25e8703f-0b8c-41a2-ace3
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[622503, 12292, 464, 8, 82, "Subsection",ExpressionUUID->"02ca5f49-27be-443c-b9f8-a25da747186d"],
-Cell[622970, 12302, 6527, 132, 736, "Text",ExpressionUUID->"5ebf3536-227a-481a-a899-3f0be03e0a26"]
+Cell[622970, 12302, 6196, 128, 705, "Text",ExpressionUUID->"5ebf3536-227a-481a-a899-3f0be03e0a26"],
+Cell[629169, 12432, 160, 3, 43, "Input",ExpressionUUID->"6a54763a-70b0-4955-ab7b-c4d2b99b6065"],
+Cell[629332, 12437, 1678, 28, 52, "Text",ExpressionUUID->"0fec2d22-d3d6-481f-8170-8a921c0e7587"],
+Cell[631013, 12467, 323, 8, 73, "Input",ExpressionUUID->"e8e7c322-4ccb-4e06-9c5b-25d50118bf8e"],
+Cell[631339, 12477, 2371, 46, 86, "Text",ExpressionUUID->"4b7f69c9-59f9-4fdd-aed4-b990655e211f"],
+Cell[633713, 12525, 583, 15, 73, "Input",ExpressionUUID->"9ea35569-e6e1-4c6c-ae22-01e34bd7ebe9"],
+Cell[634299, 12542, 1475, 21, 52, "Text",ExpressionUUID->"07452ea1-d507-4687-8e70-2e353bbf31c4"]
 }, Open  ]]
 }, Open  ]]
 }
